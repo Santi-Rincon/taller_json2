@@ -9,15 +9,12 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 public class ProductJsonWriter {
+
     public void writeProducts(List<Product> products, String filePath) throws IOException {
         JSONArray productList = new JSONArray();
         
-
         for(Product product : products) {
             JSONObject productObj = new JSONObject();
-            productObj.put("productId", "001");
-            productObj.put("description", "Producto X");
-            productObj.put("presentation", "Caja");
 
             productObj.put("productId", product.getProductId());
             productObj.put("description", product.getDescription());

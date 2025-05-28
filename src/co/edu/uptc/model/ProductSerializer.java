@@ -4,15 +4,17 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.util.List;
 
 public class ProductSerializer{
-    public void serializeProduct(Product product, String filePath) throws IOException {
+
+    public void serializeProduct(List<Product> products, String filePath) throws IOException {
         File outputFile = new File("products.dat");
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(outputFile));
-        out.writeObject(product);
+        out.writeObject(products);
         out.close();
         
-        System.out.println("Product serialized successfully to " + filePath);
+        System.out.println("Producto serializado exitosamente en " + filePath);
        
     }
 

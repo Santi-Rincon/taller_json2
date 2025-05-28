@@ -9,16 +9,18 @@ import org.json.simple.parser.JSONParser;
 
 
 public class ProductJsonReader {
+
     public List<Product> readProducts(String filePath) {
         List<Product> products = new ArrayList<>();
         JSONParser parser = new JSONParser();
 
         try (FileReader reader = new FileReader(filePath)) {
             Object obj = parser.parse(reader);
-            JSONArray productArray = (JSONArray) obj;
+            JSONArray productList = (JSONArray) obj;
 
-            for (Object productObj : productArray) {
+            for (Object productObj : productList) {
                 JSONObject jsonProduct = (JSONObject) productObj;
+                
                 String productId = (String) jsonProduct.get("productId");
                 String description = (String) jsonProduct.get("description");
                 String presentation = (String) jsonProduct.get("presentation");
@@ -26,6 +28,8 @@ public class ProductJsonReader {
                 Product product = new Product(productId, description, presentation);
                 products.add(product);
             }
+
+            System.out.println("Productos leídos exitosamente desde JSON.");
         } catch (Exception e) {
             e.printStackTrace();
         }
