@@ -1,6 +1,8 @@
-package co.edu.uptc.model;
+package co.edu.uptc.model.customer;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable {
     private String id;
     private String address;
     private String phone;
