@@ -7,6 +7,8 @@ import java.io.ObjectOutputStream;
 import java.util.List;
 
 public class ProductSerializer{
+    public ProductSerializer() {
+    }
 
     public void serializeProduct(List<Product> products, String filePath) throws IOException {
         File outputFile = new File("products.dat");

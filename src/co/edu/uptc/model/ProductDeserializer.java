@@ -8,9 +8,13 @@ import java.util.List;
 
 public class ProductDeserializer {
 
+    public ProductDeserializer() {
+    }
+
     public List<Product> deserializeProduct(String filePath) throws IOException, ClassNotFoundException {
-        File outputFile = new File("products.dat");
-        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(outputFile))){
+        File inputFile = new File("products.dat");
+
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(inputFile))){
             List<Product> products = (List<Product>) in.readObject();
             System.out.println("Producto deserializado exitosamente desde " + filePath);
             return products;
