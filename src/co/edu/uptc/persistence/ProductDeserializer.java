@@ -1,10 +1,12 @@
-package co.edu.uptc.model;
+package co.edu.uptc.persistence;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.List;
+
+import co.edu.uptc.model.Product;
 
 public class ProductDeserializer {
 

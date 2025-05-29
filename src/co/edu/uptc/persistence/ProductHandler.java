@@ -1,9 +1,11 @@
-package co.edu.uptc.model;
+package co.edu.uptc.persistence;
 import java.util.ArrayList;
 import java.util.List;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import co.edu.uptc.model.Product;
 
 public class ProductHandler extends DefaultHandler {
 

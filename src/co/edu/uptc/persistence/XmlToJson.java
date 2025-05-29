@@ -1,4 +1,4 @@
-package co.edu.uptc.model;
+package co.edu.uptc.persistence;
 
 import java.io.File;
 import javax.xml.parsers.SAXParser;

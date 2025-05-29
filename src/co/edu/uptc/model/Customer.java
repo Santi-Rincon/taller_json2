@@ -1,4 +1,4 @@
-package co.edu.uptc.model.customer;
+package co.edu.uptc.model;
 
 import java.io.Serializable;
 

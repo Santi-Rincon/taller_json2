@@ -1,4 +1,4 @@
-package co.edu.uptc.model;
+package co.edu.uptc.persistence;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+
+import co.edu.uptc.model.Product;
 
 public class ProductJsonWriter {
 

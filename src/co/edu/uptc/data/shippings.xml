@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<shippings>
+    <shipping shippingId="G001">
+        <carrier>Transportadora Rápida</carrier>
+        <shippingDate>2025-05-25</shippingDate>
+        <status>Para despacho</status>
+    </shipping>
+    <shipping shippingId="G002">
+        <carrier>Logística Express</carrier>
+        <shippingDate>2025-05-26</shippingDate>
+        <status>En transporte</status>
+    </shipping>
+    <shipping shippingId="G003">
+        <carrier>Envía</carrier>
+        <shippingDate>2025-05-20</shippingDate>
+        <status>Entregado</status>
+        <deliveryDate>2025-05-27</deliveryDate>
+    </shipping>
+</shippings>

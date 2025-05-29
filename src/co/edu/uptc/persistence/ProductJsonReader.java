@@ -1,4 +1,4 @@
-package co.edu.uptc.model;
+package co.edu.uptc.persistence;
 
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -7,6 +7,8 @@ import java.util.List;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+import co.edu.uptc.model.Product;
 
 
 public class ProductJsonReader {

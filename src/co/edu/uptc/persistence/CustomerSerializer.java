@@ -1,9 +1,11 @@
-package co.edu.uptc.model.customer;
+package co.edu.uptc.persistence;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+
+import co.edu.uptc.model.Customer;
 
 public class CustomerSerializer {
 
